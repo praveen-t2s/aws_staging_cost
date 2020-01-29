@@ -36,7 +36,7 @@ values = list(dictionary.values())
 #exit()
 
 credentials = pygsheets.authorize(service_file='/root/NewRelic-6d54dec5d48c.json')
-sheet = credentials.open_by_url('https://docs.google.com/spreadsheets/d/1wVT6_XwgGTpyf859vmu01xtXtO6OPC2K9AG4fbhg4cs/edit#gid=xxxxxxxx')
+sheet = credentials.open_by_url('/edit#gid=xxxxxxxx')
 ws = sheet.worksheet('title','January 2020')
 
 alpha = list(string.ascii_uppercase)
